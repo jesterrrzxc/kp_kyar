@@ -1,0 +1,87 @@
+.owl-nav{
+    display: flex;
+    justify-content: center;
+    margin-right: 35px;
+    
+}
+
+button.owl-prev, button.owl-next{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+    margin: 20px 40px;
+    outline: none;
+}
+
+.nav_prev{
+    width: 25px;
+    height: 25px;
+}
+.nav_next{
+    width: 25px;
+    height: 25px;
+}
+
+.nav_prev_cont, .nav_next_cont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nav_prev_cont>p{
+    margin: 0;
+    font-size: 80%;
+    color: rgba(0, 0, 0, 0.401);
+}
+.nav_next_cont>p
+{
+    margin: 0;
+    font-size: 80%;
+}
+
+.slider2 > .owl-stage-outer{
+    position: relative;
+}
+
+.slider2 > .owl-nav{
+    left: -2%;
+    position: absolute;
+    width: 103%;
+    top: 37%;
+    justify-content: space-between;
+}
+
+.slider2 > .owl-nav > button{
+    margin: 0;
+}
+
+.slide2_nav_prev, .slide2_nav_next{
+    width: 40px;
+    height: 40px;
+}
+.slider3 > .owl-stage-outer{
+    position: relative;
+}
+
+.slider3 > .owl-nav{
+    left: 0.3%;
+    position: absolute;
+    width: 98.6%;
+    top: 37%;
+    justify-content: space-between;
+}
+
+.slider3 > .owl-nav > button{
+    margin: 0;
+}
+
+.slide2_nav_prev, .slide2_nav_next{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+

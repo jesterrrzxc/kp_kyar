@@ -1,0 +1,556 @@
+@media screen and (max-width: 768px){
+   body{
+    font-size: 10px;
+   }
+   
+   .adventures{
+    height: auto;
+   }
+   nav{
+    align-items: center;
+   }
+   
+   .booking{
+    height: 70px;
+    padding: 1.3em 1.5em;
+    margin: 0;
+   }
+   .arrow{
+    padding: 0 0.5em;
+   }
+   .bookingmenu_item{
+    padding: 0.5em 0.5em;
+}
+   #davaToday::after{
+    
+    top: -2%;
+    left: 38%;
+    font-size: 1.1em;
+    font-weight: 100;
+    opacity: 0.6;
+}
+#davaToday, #davaToday2{
+   
+    font-size: 0.9em;
+    position: relative;
+}
+#davaToday2::after{
+   
+    top: -2%;
+    left: 38%;
+    font-size: 1.1em;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+::-webkit-calendar-picker-indicator {
+    
+    width: 10px;
+    height: 10px;
+    padding-right: 2em;
+    
+  }
+  .find{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .article{
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .article_text{
+    padding-bottom: 1em;
+  }
+  h2{
+    padding-bottom: 0.4em;
+  }
+  .explore{
+    margin: 0 7%;
+  }
+  .video1{
+    height: 300px;
+  }
+  .vids-slider{
+    margin-bottom: 10%;
+  }
+  .bestplaces_pics{
+    height: 250px;
+    margin-bottom: 5%;
+  }
+  .latest{
+    height: 400px;
+  }
+  .latest_pic1{
+    width: 150px;
+    height: 150px;
+}
+.latest_pic2{
+    width: 180px;
+    height: 180px;
+}
+.latest_pic3{
+    width: 80px;
+    height: 80px;
+}
+.latest_pic4{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.latest{
+    margin-bottom: 1%;
+}
+.subscribe{
+    margin-top: 0;
+}
+.subscribe_img{
+    height: 200px;
+}
+.subscribe_form{
+    margin-top: 8%;
+}
+[class^="partners_logo"]{
+    height: 100px;
+}
+.company_logo{
+    width: 50px;
+   }
+   [alt="play"]{
+    width: 20px;
+    height: 20px;
+   }
+   .bookingmenu_item img{
+    width: 15px;
+    height: 15px;
+   }
+   .stats_item img{
+    width: 30px;
+    height: 30px;
+   }
+   .slider1 > .owl-nav{
+    margin-left: 15px;
+   }
+   .slider2 > .owl-nav{
+    width: 100%;
+    
+}
+.click-for-video > img{
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+@media screen and (max-width: 426px){
+        body{
+        font-size: 14px;
+        margin: 0;
+       }
+       
+       .find .article{
+        width: 100vw;
+       }
+       .find_card p{
+        margin-left: 50px;
+       }
+       .find_card_rating{
+        margin-left: 50px;
+        
+       }
+       .adventure_cont1{
+        gap: 0;
+       }
+       .company_logo2{
+        position: absolute;
+        top: 17px;
+        left: 40px;
+       }
+       .company_logo2.disabled{
+        display: none;
+       }
+        button:nth-of-type(1){
+        height: 30px;
+        }
+        
+        button:nth-of-type(2){
+        height: 30px;
+        }
+       .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+        }
+        .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+        }
+        .menu-btn span:nth-of-type(2) {
+            top: calc(50% - 5px);
+        }
+        .menu-btn span:nth-of-type(3) {
+            top: calc(50% + 5px);
+        }
+        nav::after{
+            position: absolute;
+            content: '';
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            height: 260px;
+            background-color: #222222;
+            z-index: -1;
+            border-radius: 0 0 10px 0;
+        }
+       nav{
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translateX(-300%);
+	    transition: transform 0.5s; 
+        z-index: 3;
+       }
+       nav.active{
+        transform: translateX(0);
+       }
+       .bookingmenu{
+        flex-direction: column;
+        justify-content: flex-start;
+       }
+       
+       header{
+        height: 60px;
+       }
+       .line{
+        width: 100%;
+        height: 1px;
+       }
+       .booking{
+        gap: 5px;
+        height: 270px;
+        padding: 1.3em 1.5em;
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+       }
+       .arrow{
+        padding: 0 0.5em;
+       }
+       .bookingmenu_item{
+        
+        padding: 1em 1.1em;
+        align-self: stretch;
+        }
+        .bookingmenu_item3, .bookingmenu_item2{
+            justify-content: flex-start;
+            padding-left: 0.1em;
+        }
+        .arrow{
+            margin-left: 150px;
+        }
+        .bookingmenu_item4 > .arrow{
+            margin-left: 230px;
+        }
+        .booking > button{
+            border-radius: 10px;
+            padding: 1em 2.7em;
+            font-size: 1em;
+           height: 50px;
+        }
+        .article > button{
+            padding: 0;
+        }
+        .places{
+            margin-left: 150px;
+            width: 425px;
+            overflow: hidden;
+        }
+       #davaToday::after{
+        
+        top: 20%;
+        left: 22%;
+        font-size: 1.1em;
+        font-weight: 100;
+        opacity: 0.6;
+    }
+    #davaToday, #davaToday2{
+       
+        font-size: 1.1em;
+        position: relative;
+    }
+    #davaToday2::after{
+       
+        top: 20%;
+        left: 22%;
+        font-size: 1.1em;
+        font-weight: 100;
+        opacity: 0.6;
+    }
+    
+    ::-webkit-calendar-picker-indicator {
+        
+        width: 15px;
+        height: 15px;
+        padding-right: 2em;
+        margin-right: 65px;
+        
+      }
+      .slider1{
+        width: 480px;
+      }
+      .places{
+        width: 100vw;
+        margin-left: 0;
+      }
+      .find_card{
+        margin-left: 0;
+      }
+      .find{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .article{
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+      .article_text{
+        padding-bottom: 1em;
+      }
+      h2{
+        padding-bottom: 0.4em;
+      }
+      .explore_card{
+        width: 100%;
+        
+      }
+      .explore{
+        margin: 0;
+      }
+      .video1{
+        
+        height: 200px;
+      }
+      .explore_all{
+        align-self: flex-end;
+        text-align: center;
+      }
+      .toprated_cont{
+        margin: 0 5%;
+      }
+      .vids-slider{
+        margin-bottom: 10%;
+      }
+      .bestplaces_pics{
+        height: 200px;
+        margin-bottom: 5%;
+      }
+      .latest_article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10%;
+      }
+      .latest{
+        height: 400px;
+        flex-direction: column;
+        
+      }
+      .latest_pic1{
+        width: 180px;
+        height: 180px;
+    }
+    .latest_pic2{
+        width: 180px;
+        height: 180px;
+    }
+    .latest_pic3{
+      width: 180px;
+      height: 180px;
+    }
+    .latest_pic4{
+      width: 180px;
+      height: 180px;
+        margin: 0;
+    }
+    .latest{
+        margin-bottom: 1%;
+    }
+    .subscribe{
+        margin-top: 250px;
+        flex-direction: column-reverse;
+    }
+    .subscribe_img{
+        height: 230px;
+    }
+    .subscribe_form{
+        margin-top: 8%;
+    }
+    [class^="partners_logo"]{
+        height: 100px;
+    }
+    .partners_logo3{
+      margin-top: 4px;
+    }
+    .info_row2{
+      flex-direction: column;
+      gap: 10px;
+    }
+    [class^="info_column"]{
+      flex-direction: row;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+    .info_column5{
+      flex-direction: column;
+      height: auto;
+      gap: 10px;
+      align-items: center;
+    }
+    .footer_rights{
+      
+    }
+    .footer_right{
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer_copyright{
+      align-self: center;
+    }
+    .vertical_line{
+      height: 0.7px;
+      width: auto;
+    }
+    .info_column5 .info_column_item{
+      height: auto;
+    }
+    .info_row_item{
+     margin-bottom: 0;
+    }
+    .info_column_item{
+      text-align: center;
+    }
+    .company_logo2{
+      display: block;
+    }
+    .company_logo{
+        display: none;
+       }
+       [alt="play"]{
+        width: 20px;
+        height: 20px;
+       }
+       .bookingmenu_item img{
+        width: 20px;
+        height: 20px;
+       }
+       .stats_item img{
+        width: 30px;
+        height: 30px;
+       }
+       .slider1 > .owl-nav{
+        margin-left: 0;
+        width: 480px;
+       }
+       .slider1 .owl-prev{
+        margin-left: 0;
+       }
+       .slider2 > .owl-nav{
+        width: 100%;
+        margin-right: 0;
+    }
+    .click-for-video > img{
+        width: 60px;
+        height: 60px;
+      }
+      .arrow{
+        margin-left: 85px;
+      }
+      .bookingmenu_item4 > .arrow {
+        margin-left: 165px;
+      }
+      h1{
+        font-size: 25px;
+        text-align: center;
+      }
+}
+@media screen and (max-width: 321px){
+  h1{
+    font-size: 25px;
+    text-align: center;
+  }
+  .subscribe_img{
+    height: 180px;
+  }
+  .arrow{
+    margin-left: 15px;
+  }
+  .bookingmenu_item4 > .arrow {
+    margin-left: 95px;
+  }
+  .slider1{
+    width: 100vw;
+  }
+  .slider1 .owl-nav{
+    width: 100vw;
+  }
+  .stats{
+    flex-wrap: wrap;
+  }
+  .stats_item{
+    
+    width: 120px;
+  }
+  [class^="info_column"]{
+    flex-direction: column;
+   
+  }
+  .info_column1_logoes{
+    flex-direction: row;
+    
+  }
+  .info_column3, .info_column2, .info_column4{
+    display: none;
+  }
+  .info_column5{
+    margin-top: 20px;
+  }
+  .latest_pic1, .latest_pic2, .latest_pic3, .latest_pic4{
+    width: 120px;
+    height: 120px;
+  }
+  .subscribe{
+    margin-top: 150px;
+  }
+  .video1{
+    height: auto;
+  }
+  header{
+  
+    margin-bottom: 20px;
+  }
+  .logreg{
+    flex-direction: column;
+  }
+  .explore_card {
+    width: 90%;
+  }
+  .slider2{
+    margin-left: 10px;
+  }
+  .slider2 .owl-nav{
+    width: 94%;
+  }
+}

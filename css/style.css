@@ -1,0 +1,1149 @@
+@font-face {
+
+    font-family: "vremenagrotesk"; 
+
+    src: url("fonts/vremenagrotesk/VremenaGrotesk.otf") format("opentype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+ @font-face {
+
+        font-family: "Supria_Sans"; 
+    
+        src: url("fonts/supria_sans/Supria\ Sans\ Regular.otf") format("opentype"); 
+        font-style: normal; 
+        font-weight: normal; 
+     } 
+    
+
+body{
+    font-family: "vremenagrotesk";
+    
+    margin: 0 8% 0 8%;
+}
+
+.adventures{
+   
+    width: auto;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.304), #ffffff00 ), url("../images/head.jpg") no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.adventure_cont1{
+    display: flex;
+    gap: 6em;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    padding: 3.6% 8.5% 2% 8.5%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.company_logo{
+    align-self: flex-end;
+   }
+.company_logo img{
+    padding-top: 5%;
+}
+.company_logo2{
+    display: none;
+}
+nav{
+    gap: 1.7em;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.53);
+}
+
+nav a:hover{
+    color: white;
+    border-bottom: 3px #e75c4b solid;
+
+    transition: 0.1s;
+}
+
+.logreg{
+    display: flex;
+    gap: 1em;
+}
+
+.login{
+    border-radius: 5px;
+    padding: 0.7em 2.7em;
+    border: none;
+    appearance: none;
+    color: #e75c4b;
+    font-size: 0.8em;
+    outline: #e75c4b solid 1px ;
+    background: transparent;
+    cursor: pointer;
+}
+
+.register{
+    border-radius: 5px;
+    padding: 0.7em 2.6em;
+    border: none;
+    appearance: none;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 0.75em;
+    outline: #e75c4b solid 1px ;
+    background: #e75c4b;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.adventure_cont2{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.booking{
+    
+    background-color: rgba(255, 255, 255, 0.267);
+    
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 1.3em 2.3em;
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.bookingmenu{
+    flex-grow: 1;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    font-family: "Supria_Sans";
+
+}
+
+.bookingmenu_item{
+    display: flex;
+    padding: 0.5em 1em;
+    font-size: 0.7em;
+    text-align: left;
+    align-items: center;
+}
+.bookingmenu_item2{
+    flex-grow: 1;
+    justify-content: center;
+}
+.bookingmenu_item3{
+    justify-content: center;
+    flex-grow: 1;
+}
+.bookingmenu_item4{
+    gap: 1.4em;
+}
+
+#davaToday::after{
+    content: "Check-in";
+    position: absolute;
+    top: -2%;
+    left: 38%;
+    font-size: 1.1em;
+    font-weight: 100;
+    opacity: 0.6;
+}
+#davaToday, #davaToday2{
+    outline: none;
+    border: none;
+    appearance: none;
+    font-family: "Supria_Sans";
+    font-weight: bold;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    font-size: 0.9em;
+    position: relative;
+}
+#davaToday2::after{
+    content: "Check-out";
+    position: absolute;
+    top: -2%;
+    left: 38%;
+    font-size: 1.1em;
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 0.5;
+    background: url(../images/icons/data.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    padding-right: 2em;
+    
+  }
+.booking > button{
+    border-radius: 10px;
+    padding: 0.7em 2.7em;
+    border: none;
+    appearance: none;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 1em;
+    outline: #e75c4b solid 1px ;
+    background: #e75c4b;
+    font-weight: bold;
+}
+
+h1{
+    margin: 0;
+    color: white;
+    font-size: 3em;
+    font-weight: 200;
+    line-height: 120%;
+    
+}
+
+.play{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play > p{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+[alt="play"]{
+    display: block;
+}
+
+[alt="play"] + p{
+    display: block;
+    
+}
+
+.home_logo{
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+.home_logo > img{
+   width: 20px;
+   height: 20px;
+}
+.home_log{
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+}
+.home_log > img{
+    width: 25px;
+    height: 25px;
+}
+
+.bookingmenu_item:nth-of-type(1){
+    gap: 1.4em;
+}
+
+select{
+    outline: none;
+   appearance: none;
+    border: none;
+    font-size: 1.2em;
+    font-family: "Supria_Sans";
+    font-weight: bold;
+    position: relative;
+    
+}
+.select2{
+    font-size: 0.9em;
+}
+.accomod > p{
+    font-size: 1.1em;
+    font-weight: 100;
+    opacity: 0.6;
+    
+    margin: 0;
+}
+
+.accomod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2em;
+}
+
+.line_cont{
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.line{
+    width: 0.1px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.195);
+   
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    padding: 0 2.9em 0 3.8em;
+    opacity: 0.6;
+}
+
+
+
+.stats{
+    display: flex;
+    gap: 6.8%;
+    width: auto;
+    justify-content: center;
+    margin: 6%;
+    
+}
+
+.stats_item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(241, 241, 241, 0.592);
+    height: 150px;
+    width: 150px;
+    border-radius: 1em;
+}
+
+.stats_item_cont{
+    font-family: "Supria_Sans";
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    font-weight: 900;
+    
+}
+
+.img1, .img2, .img3, .img4{
+    align-self: center;
+    padding-bottom: 1em;
+    
+}
+
+.number{
+    color: #e75c4b;
+}
+
+.find{
+    display: flex;
+    margin: 0 8.3%;
+}
+
+.article{
+    font-family: "Supria_Sans"; 
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+.article > button{
+    width: 30%;
+    border-radius: 30px;
+    padding: 1em 1.5em;
+    border: none;
+    appearance: none;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 0.9em;
+    outline: #e75c4b solid 1px ;
+    background: #e75c4b;
+    font-weight: bold;
+}
+
+.places{
+   
+    box-sizing: border-box;
+}
+
+.article_text{
+    padding-bottom: 1.5em;
+    opacity: 0.5;
+}
+
+h2{
+    letter-spacing: 0.02em;
+    padding-bottom: 0.8em;
+    font-size: 2.3em;
+    margin: 0;
+    line-height: 1.3em;
+    font-weight: 900;
+}
+
+.slider1{
+    width: 615px;
+}
+
+.find_card{
+    height: 230px;
+    border-radius: 5px;
+    font-family: "Supria_Sans";
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    position: relative;
+}
+
+.find_card:after {
+    border-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.2);
+    z-index: 2;
+  }
+
+.find_card > p{
+    top: 10px;
+    left: 5px;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    color: white;
+    line-height: 1.3em;
+}
+
+.find_card_img1, .find_card_img8{
+    background-image: url(../images/place1.jpeg);
+}
+
+.find_card_img2, .find_card_img7{
+    background-image: url(../images/place2.png);
+}
+
+.find_card_img3, .find_card_img5{
+    background-image: url(../images/place3.jpg);
+}
+
+.find_card_img4, .find_card_img6{
+    background-image: url(../images/place4.jpg);
+}
+
+.find_card_rating{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    background-color: #e75c4b;
+    padding: 3px 7px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 4px;
+    font-weight: 100;
+    
+    z-index: 4;
+}
+
+
+
+.explore_card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 2px solid rgba(241, 241, 241, 0.592);
+    border-radius: 10px;
+    height: 225px;
+    width: 245px;
+    font-size: 0.5em;
+    font-family: "Supria_Sans";
+    font-weight: 900;
+}
+.explore_card_img > img{
+    height: 130px;
+    border-radius: 10px 10px 0 0;
+}
+
+.explore{
+    margin: 0 9.5%;
+}
+.explore>p{
+    margin-bottom: 3.5%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.explore_card_rating{
+    position: absolute;
+    display: flex;
+    top: 7%;
+    left: 8%;
+    gap: 5px;
+    background-color: white;
+    padding: 0.7em 1.4em;
+    border-radius: 5px;
+    font-weight: 100;
+}
+.explore_card_cont{
+    padding: 0.8em 3em 0.8em 2em;
+    display: flex;
+    flex-direction: column;
+    
+}
+.explore_card_text{
+    padding-top: 0.5em;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+.explore_card_info{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+}
+.cost{
+    color: rgba(0, 0, 0, 0.766);
+    font-weight: 100;
+    line-height: 1.6em;
+}
+.cost>span{
+    font-weight: 700;
+    color: #e75c4b;
+    font-size: 1.2em;
+}
+.period{
+    height: 22px;
+    
+}
+.period>p{
+    color: rgba(0, 0, 0, 0.766);
+    padding: 0.5em;
+    border-radius: 2px;
+    margin: 0;
+    font-weight: 100;
+    background-color: #fcf0e4;
+}
+
+.vids-slider{
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.vid-wrapper{
+    padding: 5px 0 10px 0;
+}
+
+.swiper-slide{
+    width: 65%;
+}
+
+.vid-slider1, .vid-slider2{
+   
+    align-self: center;
+}
+.video1{
+    height: 550px;
+}
+
+.video1 img{
+    border: 5px solid #e75c4b;
+}
+.video1 > img, .video2 > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.video2 > img{
+    border-radius: 20px;
+}
+.click-for-video {
+    position: absolute;
+    z-index: 3;
+    left: 40px;
+    top: 40px;
+    cursor: pointer;
+  }
+  .click-for-video > img{
+    width: 90px;
+    height: 90px;
+  }
+  .youtube {
+    position: absolute;
+    z-index: 4;
+    width: 54.5vw;
+    height: 75vh;
+  }
+   
+  div.youtube {
+    display: none;
+  }
+
+  .top_rated{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  h4{
+    align-self: center;
+    letter-spacing: 0.015em;
+    padding-bottom: 0.8em;
+    font-size: 2.3em;
+    margin: 0;
+    line-height: 1.3em;
+    font-weight: 900;
+}
+.explore_all{
+    align-self: center;
+    
+}
+.explore_all a{
+    font-weight: 100;
+    color: #323232d1;
+    font-size: 0.9em;
+   
+}
+.toprated_card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 2px solid rgba(241, 241, 241, 0.738);
+    border-radius: 10px;
+    height: 290px;
+    width: 196px;
+    font-size: 1em;
+    font-family: "Supria_Sans";
+    font-weight: 100;
+}
+.toprated_cont{
+    margin: 0 8.5%;
+    margin-top: 6%;
+    margin-bottom: 7%;
+}
+
+.toprated_rating{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 17px;
+    top: 18.5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.toprated_rating > img{
+    cursor: pointer;
+    z-index: 4;
+}
+.background{
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    top: 7px;
+   right: 7px;
+   cursor: pointer;
+}
+.toprated_card_img > img{
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.toprated_card_cont{
+    color: rgba(0, 0, 0, 0.822);
+    padding: 6% 0 0 7%;
+}
+.toprated_card_info{
+    line-height: 0.7em;
+    font-size: 0.8em;
+    margin-bottom: 3%;
+}
+.toprated_cost{
+    display: flex;
+    align-items: flex-start;
+}
+.value{
+    font-size: 1.2em;
+    color: #e75c4b;
+    letter-spacing: 0.07em;
+}
+.currency{
+    color: #e75c4b;
+    font-size: 0.7em;
+}
+.toprated_card_text{
+    font-size: 1.1em;
+    letter-spacing: 0.03em;
+    margin-bottom: 3%;
+}
+
+.toprated_card_img::after{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient( rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    z-index: 2;
+    height: 120px;
+}
+
+.bestplaces{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.bestplaces_head{
+    align-self: center;
+    
+    margin: 0;
+}
+h5{
+    letter-spacing: 0.02em;
+    padding-bottom: 0.8em;
+    font-size: 2.3em;
+    margin: 0;
+    line-height: 1.3em;
+    font-weight: 900;
+}
+
+.bestplaces_pics{
+    height: 380px;
+    margin: 1.5% 8.5% 1.5% 8.5%;
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3%;
+}
+
+.bestplaces_column1, .bestplaces_column2, .bestplaces_column3, .bestplaces_column4{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    flex-basis: 10%;
+    justify-content: stretch;
+    gap: 2%;
+    
+}
+.bestplace_img{
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+.bestplaces_column_item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient( #d1450966 10%,rgba(255, 255, 255, 0));
+    z-index: 5;
+    height: 50%;
+    border-radius: 10px;
+}
+
+
+.bestplaces_column1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.544));
+    z-index: 2;
+    
+    border-radius: 20px;
+}
+.bestplaces_column1{
+    flex: 7 0;
+    position: relative;
+    border-radius: 20px;
+}
+.bestplaces_column2{
+    justify-content: space-between;
+    flex: 2 0;
+}
+.bestplaces_column3{
+    flex: 3 0;
+}
+.bestplaces_column4{
+    flex: 2 0;
+    position: relative;
+}
+.bestplaces_column2_item1{
+    flex: 3 0;
+    position: relative;
+}
+.bestplaces_column2_item2{
+    flex: 0 1;
+    position: relative;
+}
+.bestplaces_column3_item1{
+    flex: 2 1;
+    position: relative;
+}
+.bestplaces_column3_item2{
+    flex: 1 1;
+    position: relative;
+}
+.bestplaces_column4_item1{
+    flex: 0 1;
+    position: relative;
+}
+.bestplaces_column4_item2{
+    flex: 3 0;
+    position: relative;
+}
+
+.bestplaces_info{
+    bottom: 5%;
+    left: 5%;
+    position: absolute;
+    color: white;
+    z-index: 3;
+}
+.bestplaces_rating *{
+    margin-right: 2%;
+    width: 10px;
+    height: 10px;
+}
+.bestplaces_text1{
+    margin-bottom: 2%;
+}
+.bestplaces_text2{
+    font-size: 0.8em;
+}
+.bestplaces_button{
+    
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 1em ;
+    width: 100%;
+    border: none;
+    appearance: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    
+    background: #e75c4b;
+    font-weight: 100;
+    cursor: pointer;
+    box-sizing:border-box;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    
+}
+
+h6{
+    letter-spacing: 0.02em;
+    
+    font-size: 2.3em;
+    margin: 0;
+    line-height: 1.3em;
+    font-weight: 900;
+    margin-bottom: 0.6em;
+    
+}
+.latest_text{
+    color: rgba(0, 0, 0, 0.44);
+    margin-bottom: 7%;
+    line-height: 1.3em;
+}
+.latest_button{
+    border-radius: 30px;
+    padding: 1em 2em;
+    border: none;
+    appearance: none;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 0.9em;
+    outline: #e75c4b solid 1px ;
+    background: #e75c4b;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.latest_article{
+    height: 100%;
+    align-self: center;
+}
+
+.latest{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8.5%;
+}
+.latest_pics{
+    height: 100%;
+    gap: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+.latest_cont1{
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.latest_cont2{
+    gap: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.latest_pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.latest_pic1{
+    width: 260px;
+    height: 260px;
+}
+.latest_pic2{
+    width: 330px;
+    height: 330px;
+}
+.latest_pic3{
+    width: 170px;
+    height: 170px;
+}
+.latest_pic4{
+    width: 230px;
+    height: 230px;
+    margin-bottom: 10px;
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+    margin-top: 6%;
+   
+}
+
+.subscribe_img{
+    height: 400px;
+}
+.subscribe_img img{
+    width: 100%;
+    height: 100%;
+}
+.subscribe_form{
+   margin-top: 12%;
+}
+.subscribe_form_head{
+    font-size: 1.8em;
+    letter-spacing: 0.01em;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.subscribe_form_text{
+    font-weight: 100;
+    opacity: 0.7;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: "Supria_Sans";
+
+}
+[action="subscribe"]{
+    position: relative;
+}
+[type="email"]{
+    margin-top: 5%;
+    width: 92%;
+    padding: 5%;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.185);
+    
+}
+[type="submit"]{
+    top: 36%;
+    position: absolute;
+    right: 3%;
+    border-radius: 30px;
+    padding: 0.9em 1.7em;
+    border: none;
+    appearance: none;
+    color: rgba(255, 255, 255, 0.866);
+    font-size: 0.9em;
+    outline: #e75c4b solid 1px ;
+    background: #e75c4b;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+.partners{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 900;
+}
+
+[class^="partners_logo"]{
+    width: 500px;
+    height: 190px;
+}
+.partners_logoes{
+    display: flex;
+    gap: 10%;
+    width: auto;
+    margin: 0 7%;
+}
+[alt="logo"]{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+footer{
+    background-color: rgb(39, 39, 39);
+    color: rgba(255, 255, 255, 0.89);
+    padding: 3.5em 2em 2em 2em;
+    font-size: 0.9em;
+    font-weight: 100;
+    font-family: "Supria_Sans";
+}
+.partners_logo3{
+    margin-top: 10px;
+}
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 7%;
+    margin-bottom: 7%;
+}
+
+.info_row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+[class^="info_column"]{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.info_column1_logoes{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.footer_logo{
+    width: 15px;
+    height: 15px;
+}
+.info_row_item{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.info_column5 .info_column_item{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.info_column5 .footer_logo{
+    width: 14px;
+    height: 14px;
+}
+
+.footer_line{
+    height: 0.5px;
+    background-color: white;
+    margin: 0 7% 1.5em 7%;
+}
+.footer_rights{
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_right{
+    display: flex;
+    justify-content: start;
+    gap: 0.5em;
+}
+.vertical_line{
+    width: 0.7px;
+    background-color: white;
+}
+footer a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.81);
+}
+.play img{
+    width: 27px;
+    height: 27px;
+}
+.arrow img{
+    width: 15px;
+    height: 15px;
+}
+.home_log img{
+    opacity: 0.6;
+}
+.stats_item img{
+    width: 40px;
+    height: 40px;
+}
+.find_card img{
+    width: 15px;
+    height: 15px;
+}
+.explore_card_rating img{
+    width: 10px;
+    height: 10px;
+}
+.topreated_rating img{
+    width: 20px;
+    height: 20px;
+}
+[class^="bestplaces_column"] img{
+    width: 100%;
+    height: 100%;
+}
+.bestplaces_rating img{
+    width: 10px;
+    height: 10px;
+}
+.info_row_item img{
+    width: auto;
+    height: auto;
+}
